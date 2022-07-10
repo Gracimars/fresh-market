@@ -17,10 +17,10 @@ header {
   background-color: rgb(229, 228, 237);
   }
 
-  .header__nav{
-    display: flex;
-    margin-left: 840px;
-  }
+.header__nav{
+  display: flex;
+  margin-left: 840px;
+}
 
 .header__ul {
   display: flex;
@@ -49,7 +49,7 @@ header {
   margin: 10px 0 10px 10px;
 }
 
-                                       /* MAIN */
+                            /* MAIN INDEX*/
 .main__index{
   margin: 0px 75px 30px 75px;
 }
@@ -62,36 +62,43 @@ header {
   margin-bottom: 20px;
   }
 
-  .main__section{
-    margin: 50px 0;
-  }
-
-.main__article--index {
-    display: flex;
-    justify-content: center;
+.main__section{
+  margin: 50px 0;
 }
 
-.main__galeria {
+.main__article--index {
+  display: flex;
+  justify-content: center;
+}
+
+.main__img--mp, .main__img--cuentaDni {
   width: 400px; /* ancho  */
   height: 400px; /* alto */
-    }
+}
 
 .main_parrafo--index {
   margin: 20px;
   text-align: justify;
   color:black; 
-  }
+}
 
-  .main__form--contacto {
-    border: solid 5px rgb(39, 89, 107);
-    }
-  .main__img--ofertas {
-    margin-left: 300px;
-    margin-bottom: 100px;
-    width: 800px;
-    height: 700px;
-    border-radius: 25px;
-  }
+.productos__grid {
+  display:grid;
+
+}
+
+
+.main__form--contacto {
+  border: solid 5px rgb(39, 89, 107);
+}
+
+.main__img--productos {
+  margin-left: 300px;
+  margin-bottom: 100px;
+  width: 800px;
+  height: 700px;
+  border-radius: 25px;
+}
   .spam__main--nosotros {
     display: flex;
     align-items: center;
@@ -118,6 +125,31 @@ footer{
   color:black;
   margin-top: 60px;
   }
+/* MEDIA QUERY DE TABLET */
+@media (min-width:576px) and (max-width:992px) { 
+  
+}
 
-
-
+/* MEDIA CELUlAR */
+@media (min-width:320px) and (max-width:575px) {
+  .header__nav{
+    display: flex;
+    margin-left: 0px;
+  }
+  .main__img--mp{
+    width:250px;
+    height: 250px;
+  }
+  .main__img--cuentaDni {
+    width:250px;
+    height: 250px;
+  }
+  .main__article--index {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__ul {
+    font-size: 12px;
+  }
+}
