@@ -1,68 +1,72 @@
-*{
-  margin:0px; /* Margen externo */
+* {
+  margin: 0px; /* Margen externo */
   padding: 0px; /* Margen interno */
   box-sizing: border-box;
-  }
-                                /* BODY */
+}
+/* BODY */
 
-body{
-  color:white;
-  font-family: 'Bitter', serif;
-  
-    background-color: rgb(119, 174, 174);
-  
-  }
-                                /* HEADER */
+body {
+  color: white;
+  font-family: "Bitter", serif;
+  background-color: rgb(119, 174, 174);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
+}
+/* HEADER */
 header {
   background-color: rgb(229, 228, 237);
-  }
-
-.header__nav{
   display: flex;
-  margin-left: 840px;
+  justify-content: center;
+}
+
+.header__nav {
+  display: flex;
 }
 
 .header__ul {
   display: flex;
-  flex-direction:row;
-  justify-content:flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
   margin-left: 20px;
-  }
+}
 
-.header__ul li { 
+.header__ul li {
   list-style: none; /* Modifica y/o elimina las viñetas */
   margin: 2px;
   padding: 5px;
-  }
+}
 
 .header__ul li a {
   text-decoration: none;
   color: black;
 }
 
-                                      /* NAV */
+/* NAV */
 .nav__logo {
   width: 50px;
   height: 50px;
   margin: 10px 0 10px 10px;
 }
 
-                            /* MAIN INDEX*/
-.main__index{
+/* MAIN INDEX*/
+.main__index {
   margin: 0px 75px 30px 75px;
 }
 
 .main__h1 {
   text-align: center;
-  font-size: 80px;
-  color:black;
+  font-size: auto;
+  color: black;
   margin-top: 30px;
   margin-bottom: 20px;
-  }
+}
 
-.main__section{
+.main__section {
   margin: 50px 0;
 }
 
@@ -71,85 +75,234 @@ header {
   justify-content: center;
 }
 
-.main__img--mp, .main__img--cuentaDni {
-  width: 400px; /* ancho  */
+.main__img--index {
+  width: 300px; /* ancho  */
   height: 400px; /* alto */
 }
 
 .main_parrafo--index {
+  display: flex;
   margin: 20px;
   text-align: justify;
-  color:black; 
+  color: black;
+  width: auto main;
 }
 
 .productos__grid {
-  display:grid;
-
+  display: grid;
+  grid-gap: 20px;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr; /* Unidad de grid: fr 1/3*/
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "bolsafresh1 sintaccuntables texto1"
+    "bolsafresh2 salsaarcor texto2"
+    "bolsafresh3 auriculares texto3"
+    "bolsafresh4 milkaoreo texto4"
+    "bolsafresh5 coca texto5";
+}
+.texto1,
+.texto2,
+.texto3,
+.texto4,
+.texto5 {
+  text-align: justify;
+  width: 300px;
+}
+.texto1 {
+  grid-area: texto1;
+}
+.texto2 {
+  grid-area: texto2;
+}
+.texto3 {
+  grid-area: texto3;
+}
+.texto4 {
+  grid-area: texto4;
+}
+.texto5 {
+  grid-area: texto5;
+}
+.imgPr {
+  width: 400px;
+  height: 400px;
+}
+.bolsafresh1,
+.bolsafresh2,
+.bolsafresh3,
+.bolsafresh4,
+.bolsafresh5 {
+  background-image: url("../recursos/principal-productos.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 26px;
+}
+.bolsafresh1 {
+  grid-area: bolsafresh1;
+}
+.bolsafresh2 {
+  grid-area: bolsafresh2;
+}
+.bolsafresh3 {
+  grid-area: bolsafresh3;
+}
+.bolsafresh4 {
+  grid-area: bolsafresh4;
+}
+.bolsafresh5 {
+  grid-area: bolsafresh5;
 }
 
+.sintaccuntables {
+  grid-area: sintaccuntables;
+  background-image: url("../recursos/sintacuntables.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 26px;
+}
+
+.salsaarcor {
+  grid-area: salsaarcor;
+  background-image: url("../recursos/salsaarcor.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 26px;
+}
+
+.auriculares {
+  grid-area: auriculares;
+  background-image: url("../recursos/auriculares.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 26px;
+}
+
+.milkaoreo {
+  grid-area: milkaoreo;
+  background-image: url("../recursos/milkaoreo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 26px;
+}
+
+.coca {
+  grid-area: coca;
+  background-image: url("../recursos/coca.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 26px;
+}
 
 .main__form--contacto {
   border: solid 5px rgb(39, 89, 107);
 }
-
-.main__img--productos {
-  margin-left: 300px;
+.main__img--destacada {
   margin-bottom: 100px;
-  width: 800px;
-  height: 700px;
   border-radius: 25px;
+  width: 100%;
+  height: 100%;
 }
-  .spam__main--nosotros {
-    display: flex;
-    align-items: center;
 
-    }
+.main__img--nosotros {
+  margin: 60px 0px 30px 320px;
+  border-radius: 100px;
+}
+.main__mapa {
+  border-radius: 40px;
+  margin-left: 400px;
+}
+.main__container--form {
+  display: flex;
+}
 
-  .main__img--nosotros {
-    margin: 60px 0px 30px 320px;
-    border-radius: 100px;
-  }
-  .main__mapa {
-    border-radius: 40px;
-    margin-left: 400px;
-  }
-
-  .form__instagram {
-    display: flex;
-    justify-content: center;
-    }
-                                                /* FOOTER */
-footer{ 
+/* FOOTER */
+footer {
   background-color: rgb(206, 183, 228);
   text-align: center;
-  color:black;
-  margin-top: 60px;
-  }
-/* MEDIA QUERY DE TABLET */
-@media (min-width:576px) and (max-width:992px) { 
-  
+  color: black;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1em;
 }
+/* MEDIA QUERY DE TABLET */
+/* @media (min-width: 576px) and (max-width: 992px) {
+} */
 
 /* MEDIA CELUlAR */
-@media (min-width:320px) and (max-width:575px) {
-  .header__nav{
-    display: flex;
-    margin-left: 0px;
+@media (min-width: 320px) and (max-width: 575px) {
+  .texto1,
+.texto2,
+.texto3,
+.texto4,
+.texto5 {
+  text-align: justify;
+ 
+}
+  .header__ul {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
   }
-  .main__img--mp{
-    width:250px;
+  .header__nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav__logo {
+    margin-top: 20;
+    align-self: center;
+  }
+  .main__img--mp {
+    width: 250px;
     height: 250px;
   }
   .main__img--cuentaDni {
-    width:250px;
+    width: 250px;
     height: 250px;
   }
   .main__article--index {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .header__ul {
     font-size: 12px;
+  }
+
+  .productos__grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+ /*    grid-template-columns: 1fr; /* Unidad de grid: fr 1/3*/
+/*     grid-template-rows: repeat (15, 1fr);
+    grid-template-areas:
+      "bolsafresh1"
+      "sintaccuntables"
+      "texto1"
+      "bolsafresh2"
+      "salsaarcor"
+      "texto2"
+      "bolsafresh3"
+      "auriculares"
+      "texto3"
+      "bolsafresh4"
+      "milkaoreo"
+      "texto4"
+      "bolsafresh5"
+      "coca"
+      "texto5";  */
+  }
+  .imgPr {
+    width: 200px;
+    height: 200px;
   }
 }
