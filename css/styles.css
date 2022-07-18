@@ -68,6 +68,7 @@ header {
 
 .main__section {
   margin: 50px 0;
+  background-image: linear-gradient(to top,  rgb(119, 174, 174),white);
 }
 
 .main__article--index {
@@ -86,6 +87,12 @@ header {
   text-align: justify;
   color: black;
   width: auto main;
+}
+.spam__main--nosotros {
+display: flex;
+text-align: center;
+font-size: 150%;
+margin-bottom: 2%;
 }
 
 .productos__grid {
@@ -245,7 +252,7 @@ footer {
 .texto4,
 .texto5 {
   text-align: justify;
- 
+
 }
   .header__ul {
     flex-direction: column;
