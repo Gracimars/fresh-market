@@ -64,6 +64,12 @@ header {
   color: black;
   margin-top: 30px;
   margin-bottom: 20px;
+  
+}
+.fresh__h1:hover {
+  transform: scale(2,2);
+  transition: all 2s;
+
 }
 
 .main__section {
@@ -93,6 +99,16 @@ display: flex;
 text-align: center;
 font-size: 150%;
 margin-bottom: 2%;
+}
+.main__container--form {
+  display:flex ;
+  justify-content: center;
+}
+
+button:hover{
+  background-image: radial-gradient(rgb(28, 169, 184), rgb(79, 147, 210));
+  border-radius: 15%;
+
 }
 
 .productos__grid {
@@ -208,9 +224,7 @@ margin-bottom: 2%;
   border-radius: 26px;
 }
 
-.main__form--contacto {
-  border: solid 5px rgb(39, 89, 107);
-}
+
 .main__img--destacada {
   margin-bottom: 100px;
   border-radius: 25px;
