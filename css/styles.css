@@ -18,12 +18,12 @@ body {
 /* HEADER */
 header {
   background-color: rgb(229, 228, 237);
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
 }
 
 .header__nav {
   display: flex;
+  justify-content: center;
 }
 
 .header__ul {
@@ -59,15 +59,16 @@ header {
 }
 
 .main__h1 {
-  text-align: center;
-  font-size: auto;
+ /*  width: auto; */
+ /*  text-align: center; */
+  /* font-size: auto; */
   color: black;
   margin-top: 30px;
   margin-bottom: 20px;
   
 }
 .fresh__h1:hover {
-  transform: scale(2,2);
+  transform: scale(1.25,1.25);
   transition: all 2s;
 
 }
@@ -106,8 +107,7 @@ margin-bottom: 2%;
 }
 
 button:hover{
-  background-image: radial-gradient(rgb(28, 169, 184), rgb(79, 147, 210));
-  border-radius: 15%;
+  background-image: radial-gradient(rgb(180, 227, 232), rgb(206, 216, 226));
 
 }
 
@@ -254,6 +254,14 @@ footer {
   bottom: 0;
   padding-bottom: 1em;
 }
+
+.carousel__altura {
+  height: 1000px;
+  width: 400px;
+  
+}
+
+
 /* MEDIA QUERY DE TABLET */
 /* @media (min-width: 576px) and (max-width: 992px) {
 } */
