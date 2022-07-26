@@ -42,37 +42,33 @@
         </div>
       </nav>
     </header> 
-    <main> <!-- Todo el contenido de la pagina que no sea Header o Footer -->
-      <div class="fresh__h1 container d-flex justify-content-center">  
-        <h1 class="main__h1 contacto ">CONTACTO</h1>
+    <main class="main__index"> <!-- Todo el contenido de la pagina que no sea Header o Footer -->
+      <div class="container d-flex justify-content-center">  
+        <h1 class="main__h1 contacto">CONTACTO</h1>
       </div>
       <section class="container-fluid">
         <article class="row mx-5 mt-3">
           <div class="col-xs-12 col-md-12 col-lg-6">
-          <form>
+          <form class="text-dark">
               <div class="form-floating mb-3">
-                <label for="nombre" class="form-label">Ingrese su nombre y/o Razon Social</label>
-                <input type="text" class="form-control" id="exampleInputnombre" aria-describedby="nombre">
-                  <div id="nombre" class="form-text">Por favor introduce tu nombre y/o razón social.</div>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre y/o Razon Social" >
+                <label for="nombre">Nombre y/o Razon Social</label>
               </div>
-              <div class="mb-3">
+              <div class="m-3">
                 <input type="radio" name="tipo-persona" >
                 <label >Cliente</label>
                 <input type="radio"  name="tipo-persona" >
                 <label >Proveedor</label>
               </div>
               <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="celular" placeholder="Nº de teléfono">
                 <label for="celular" class="form-label">Nº de teléfono</label>
-                <input type="number" class="form-control" id="exampleInputnombre" aria-describedby="Nº de telefono">
-                <div id="celular" class="form-text">Por favor introduce tu numero telefonico </div>
               </div>
               <div class="form-floating">
+                <input type="email" class="form-control" id="Email" placeholder="emailHelp">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">Por favor introduce tu dirección de correo electronico</div>
-              
               </div>
-              <div class="mb-3">
+              <div class="my-4">
                 <label for="exampleFormControlTextarea1" class="form-label">Envianos un mensaje, resolveremos todas tus dudas</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>

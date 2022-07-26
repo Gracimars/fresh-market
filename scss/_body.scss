@@ -1,0 +1,13 @@
+/* BODY */
+
+body {
+  color: white;
+  font-family: "Bitter", serif;
+  background-color: $bg-main;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
+  
+}

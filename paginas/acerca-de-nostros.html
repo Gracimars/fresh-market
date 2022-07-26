@@ -1,124 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de Nosotros</title>
-    <!-- Icono que aparece en el navegador -->
-    <link rel="shortcut icon" href="../recursos/favicon.ico" type="image/x-icon">
-    <!-- ANIMACIONES -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- letras de Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Poppins:ital@1&display=swap" rel="stylesheet">
-    <!-- CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- Enlace CSS -->
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de Nosotros</title>
+  <!-- Icono que aparece en el navegador -->
+  <link rel="shortcut icon" href="../recursos/favicon.ico" type="image/x-icon">
+  <!-- ANIMACIONES -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- letras de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Poppins:ital@1&display=swap"
+    rel="stylesheet">
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- Enlace CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-    <header> <!-- ENCABEZADO: incluye la barra de navegacion y el logo -->
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src="../recursos/favicon.ico" alt="LogoFresh"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 fw-bold ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="acerca-de-nostros.html">Acerca de Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ubicacion.html">Ubicaciòn</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
+  <header>
+    <!-- ENCABEZADO: incluye la barra de navegacion y el logo -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../recursos/favicon.ico" alt="LogoFresh"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 fw-bold ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="acerca-de-nostros.html">Acerca de Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ubicacion.html">Ubicaciòn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <main>
-        <div class="fresh__h1 d-flex justify-content-center">
-            <h1 class="main__h1">FRESH MARKET MAR DEL PLATA</h1>
+      </div>
+    </nav>
+  </header>
+  <main class="main__index">
+    <div class="d-flex justify-content-center">
+      <h1 class="main__h1">FRESH MARKET</h1>
+    </div>
+    <div id="carouselFreshMarket" class="mb-5 carousel slide container d-flex justify-content-center"
+      data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselFreshMarket" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselFreshMarket" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselFreshMarket" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner carousel__altura">
+        <div class="carousel-item active">
+          <img src="../recursos/nosotros.png" class="d-block w-100" alt="Equipo-Fresh">
         </div>
-        <div id="carouselFreshMarket" class="carousel slide container d-flex justify-content-center" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselFreshMarket" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselFreshMarket" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselFreshMarket" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner carousel__altura">
-            <div class="carousel-item active">
-              <img src="../recursos/nosotros.png" class="d-block w-100" alt="Equipo-Fresh">
-            </div>
-            <div class="carousel-item">
-              <img src="../recursos/main-logo.jpeg" class="d-block w-100" alt="Logo-Fresh">
-            </div>
-            <div class="carousel-item">
-              <img src="../recursos/destacada2.jpg" class="d-block w-100" alt="Fresh-Market">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselFreshMarket" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselFreshMarket" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <div class="carousel-item">
+          <img src="../recursos/main-logo.jpeg" class="d-block w-100" alt="Logo-Fresh">
         </div>
-        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../recursos/nosotros.png" class="mx-5 img-fluid carousel__altura d-block w-100" alt="Equipo-Fresh">
-            </div>
-            <div class="carousel-item">
-              <img src="../recursos/main-logo.jpeg" class="mx-5 img-fluid carousel__altura d-block w-100" alt="Logo-Fresh">
-            </div>
-            <div class="carousel-item">
-              <img src="../recursos/destacada2.jpg" class="mx-5 img-fluid carousel__altura d-block w-100" alt="Fresh-Market">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div> -->
-        <div>
-          <spam class="mt-5 spam__main--nosotros"> Fresh Market: ese local que siempre te salva cuando ya todo está cerrado. Disfrutá del día, aprovechalo al máximo trabajando o disfrutándolo con amigos. Cuando te desocupes, te esperamos en Av. Libertad 3979, Mar del Plata. Abierto las 24 horas del día, con todo lo que necesitás para tu hora y con la mejor predisposición. ¡Te esperamos!</spam>
+        <div class="carousel-item">
+          <img src="../recursos/destacada2.jpg" class="d-block w-100" alt="Fresh-Market">
         </div>
-<!--         <section>
-          <article>
-            <div>
-              <img class="main__img--nosotros animate__animated animate__jackInTheBoxgit img-fluid" src="../recursos/nosotros.png" alt="equipofresh">
-            </div>
-            <div>
-          <spam class="spam__main--nosotros"> Fresh Market: ese local que siempre te salva cuando ya todo está cerrado. Disfrutá del día, aprovechalo al máximo trabajando o disfrutándolo con amigos. Cuando te desocupes, te esperamos en Av. Libertad 3979, Mar del Plata. Abierto las 24 horas del día, con todo lo que necesitás para tu hora y con la mejor predisposición. ¡Te esperamos!</spam>
-            </div>
-        </article>
-        </section> -->
-    </main> 
-    <footer> <!-- Pie de pagina -->
-        <span>Copyright Fresk Market Mar del Plata</span>
-    </footer>
-<!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselFreshMarket" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselFreshMarket" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="text-dark mx-4 lead mb-4">
+      <spam class="spam__main--nosotros">
+        Fresh Market: ese local que siempre te salva cuando ya todo está cerrado.
+        Disfrutá del día, aprovechalo al máximo trabajando o disfrutándolo con amigos. Cuando te desocupes, te esperamos
+        en Av. Libertad 3979, Mar del Plata. Abierto las 24 horas del día, con todo lo que necesitás para tu hora y con
+        la mejor predisposición. ¡Te esperamos!
+        <div class="mt-4">
+          🤔 ¿Tenés mil cosas para hacer? Tranqui, nosotros te esperamos! 😎
+          .
+          ⏰ Fresh Market está abierto las 24 horas del día para vos.
+          .
+          ☀️ Disfrutá del día, salí a hacer ejercicio, compartí tu jornada con amigos…
+          .
+          💪 Cuando te desocupes, acercate a Avenida Libertad 3979, que te estaremos esperando.
+
+        </div>
+      </spam>
+    </div>
+  </main>
+  <footer>
+    <!-- Pie de pagina -->
+    <span>Copyright Fresk Market Mar del Plata</span>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
