@@ -1,0 +1,51 @@
+.main__index {
+
+  .main__h1 {
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    &:hover {
+      color: rgb(9, 7, 138);
+      transform: scale(1.25, 1.25);
+      transition: all 2s;
+    }
+  }
+
+  .carousel__altura {
+    height: 1000px;
+    width: 400px;
+
+  }
+
+  .spam__main--nosotros {
+    text-align: center;
+    font-size: 150%;
+  }
+
+  .main__section {
+    margin: 50px 0;
+    background-image: linear-gradient(to top, rgb(119, 174, 174), white);
+
+
+    .main__article--index {
+      display: flex;
+      justify-content: center;
+
+      .main_parrafo--index {
+        display: flex;
+        margin: 20px;
+        text-align: justify;
+        color: black;
+        width: auto main;
+      }
+
+      .main__img--index {
+        width: 300px;
+        /* ancho  */
+        height: 400px;
+        /* alto */
+      }
+    }
+  }
+}

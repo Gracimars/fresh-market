@@ -12,6 +12,10 @@ body {
 button:hover {
   background-image: radial-gradient(#b4e3e8, #ced8e2); }
 
+/* HEADER */
+header {
+  background-color: #e5e4ed; }
+
 footer {
   background-color: #ceb7e4;
   text-align: center;
@@ -21,18 +25,6 @@ footer {
   bottom: 0;
   padding-bottom: 1em; }
 
-* {
-  margin: 0px;
-  /* Margen externo */
-  padding: 0px;
-  /* Margen interno */
-  box-sizing: border-box; }
-
-/* HEADER */
-header {
-  background-color: #e5e4ed; }
-
-/* MAIN INDEX*/
 .main__index .main__h1 {
   color: black;
   margin-top: 30px;
@@ -155,25 +147,11 @@ header {
 } */
 /* MEDIA CELUlAR */
 @media (min-width: 320px) and (max-width: 575px) {
-  .texto1,
-  .texto2,
-  .texto3,
-  .texto4,
-  .texto5 {
-    text-align: justify; }
-  .header__ul {
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 0; }
-  .header__nav {
-    flex-direction: column;
-    justify-content: center; }
-  .nav__logo {
-    margin-top: 20;
-    align-self: center; }
   .main__img--mp {
     width: 250px;
     height: 250px; }
+  .spam__main--nosotros {
+    flex-direction: column; }
   .main__img--cuentaDni {
     width: 250px;
     height: 250px; }
@@ -181,15 +159,26 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  .header__ul {
-    font-size: 12px; }
   .productos__grid {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  .imgPr {
-    width: 200px;
-    height: 200px; }
+    .productos__grid .texto1,
+    .productos__grid .texto2,
+    .productos__grid .texto3,
+    .productos__grid .texto4,
+    .productos__grid .texto5 {
+      text-align: justify; }
+    .productos__grid .imgPr {
+      width: 200px;
+      height: 200px; }
   .carousel__altura {
     height: auto;
     width: 400px; } }
+
+* {
+  margin: 0px;
+  /* Margen externo */
+  padding: 0px;
+  /* Margen interno */
+  box-sizing: border-box; }

@@ -1,0 +1,55 @@
+/* MEDIA QUERY DE TABLET */
+/* @media (min-width: 576px) and (max-width: 992px) {
+} */
+
+/* MEDIA CELUlAR */
+@media (min-width: 320px) and (max-width: 575px) {
+
+
+  .main__img--mp {
+    width: 250px;
+    height: 250px;
+  }
+
+  .spam__main--nosotros {
+    flex-direction: column;
+  }
+
+  .main__img--cuentaDni {
+    width: 250px;
+    height: 250px;
+  }
+
+  .main__article--index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .productos__grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .texto1,
+    .texto2,
+    .texto3,
+    .texto4,
+    .texto5 {
+      text-align: justify;
+    }
+
+    .imgPr {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+
+  .carousel__altura {
+    height: auto;
+    width: 400px;
+
+  }
+}
