@@ -78,50 +78,38 @@
   }
 
   .sintaccuntables {
+    @extend .background-centrado;
     grid-area: sintaccuntables;
     background-image: url("../recursos/sintacuntables.jpg");
-    background-position: center;
-    background-size: cover;
-    border-radius: 26px;
+
   }
 
   .salsaarcor {
+    @extend .background-centrado;
     grid-area: salsaarcor;
     background-image: url("../recursos/salsaarcor.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 
-    border-radius: 26px;
   }
 
   .auriculares {
+    @extend .background-centrado;
     grid-area: auriculares;
     background-image: url("../recursos/auriculares.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    border-radius: 26px;
+    
   }
 
   .milkaoreo {
+    @extend .background-centrado;
     grid-area: milkaoreo;
     background-image: url("../recursos/milkaoreo.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 
-    border-radius: 26px;
   }
 
   .coca {
+    @extend .background-centrado;
     grid-area: coca;
     background-image: url("../recursos/coca.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 26px;
+    
   }
 
 }

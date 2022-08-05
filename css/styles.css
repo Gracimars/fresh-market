@@ -1,3 +1,10 @@
+/* EXTEND */
+.background-centrado, .productos__grid .sintaccuntables, .productos__grid .salsaarcor, .productos__grid .auriculares, .productos__grid .milkaoreo, .productos__grid .coca {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 26px; }
+
 /* BODY */
 body {
   color: white;
@@ -109,38 +116,19 @@ footer {
     grid-area: bolsafresh5; }
   .productos__grid .sintaccuntables {
     grid-area: sintaccuntables;
-    background-image: url("../recursos/sintacuntables.jpg");
-    background-position: center;
-    background-size: cover;
-    border-radius: 26px; }
+    background-image: url("../recursos/sintacuntables.jpg"); }
   .productos__grid .salsaarcor {
     grid-area: salsaarcor;
-    background-image: url("../recursos/salsaarcor.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 26px; }
+    background-image: url("../recursos/salsaarcor.jpg"); }
   .productos__grid .auriculares {
     grid-area: auriculares;
-    background-image: url("../recursos/auriculares.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 26px; }
+    background-image: url("../recursos/auriculares.jpg"); }
   .productos__grid .milkaoreo {
     grid-area: milkaoreo;
-    background-image: url("../recursos/milkaoreo.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 26px; }
+    background-image: url("../recursos/milkaoreo.jpg"); }
   .productos__grid .coca {
     grid-area: coca;
-    background-image: url("../recursos/coca.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 26px; }
+    background-image: url("../recursos/coca.jpg"); }
 
 /* MEDIA QUERY DE TABLET */
 /* @media (min-width: 576px) and (max-width: 992px) {
